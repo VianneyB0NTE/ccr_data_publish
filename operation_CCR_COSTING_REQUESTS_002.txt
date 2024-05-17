@@ -1,0 +1,56 @@
+{
+  "bigquery_to_bigquery_configuration": {
+    "destination_dataset_id": "ccr_kafka2bq_pipeline",
+    "destination_table_id": "CCR_COSTING_REQUESTS_002",
+    "fields": [
+      "business_unit_identifier_client",
+      "warehouse_identifier",
+      "product_adeo_reference",
+      "currency_code",
+      "partner_identifier",
+      "supplier_circuit",
+      "port_of_loading",
+      "port_of_discharge",
+      "purchasing_incoterm_code",
+      "selling_incoterm_code",
+      "development_mode",
+      "palletization_plan_in",
+      "palletization_plan_storage",
+      "palletization_plan_out",
+      "number_of_units",
+      "palletization_plan_length",
+      "palletization_plan_width",
+      "palletization_plan_height",
+      "palletization_plan_weight_gross",
+      "palletization_plan_type",
+      "palletization_plan_number_of_layers",
+      "season_sales_type",
+      "season_start_date",
+      "season_end_date",
+      "MESSAGE_ID",
+      "_timestamp"
+    ],
+    "load_type": "LOAD_TYPE_APPEND",
+    "source_dataset_id": "dl_ccr_kafka2bq_pipeline",
+    "source_table_id": "CCR_COSTING_REQUESTS_002"
+  },
+  "id": "ccr_costing_requests_002",
+  "metadata": {
+    "destinations": [
+      {
+        "fqn": "dfdp-ccr-team-pprod.ccr_kafka2bq_pipeline.CCR_COSTING_REQUESTS_002",
+        "pipeline_component_id": "dfdp-ccr-team-pprod.ccr_kafka2bq_pipeline.CCR_COSTING_REQUESTS_002",
+        "resource_type": "BIGQUERY_TABLE"
+      }
+    ],
+    "request_id": "fed8dd06-0f1b-422a-8f4d-b863b1246d8a",
+    "sources": [
+      {
+        "fqn": "dfdp-ccr-team-pprod.dl_ccr_kafka2bq_pipeline.CCR_COSTING_REQUESTS_002",
+        "pipeline_component_id": "dfdp-ccr-team-pprod.dl_ccr_kafka2bq_pipeline.CCR_COSTING_REQUESTS_002",
+        "resource_type": "BIGQUERY_VIEW"
+      }
+    ]
+  },
+  "type": "BIGQUERY_TO_BIGQUERY"
+}

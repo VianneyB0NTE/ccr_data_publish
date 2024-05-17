@@ -1,0 +1,171 @@
+{
+  "bigquery_table_configuration": {
+    "clustering_fields": [
+      "TEC_DAT_MAJ"
+    ],
+    "dataset_id": "ccr_kafka2bq_pipeline",
+    "dataset_label": "PUBLISH",
+    "description": "CCR costing requests for LMES",
+    "partitioning": {
+      "field": "_timestamp",
+      "time_partitioning_type": "DAY",
+      "type": "PARTITIONING_BY_FIELD"
+    },
+    "schema_fields": [
+      {
+        "description": "https://adeo.collibra.com/asset/767397bf-72ef-447f-98f9-0a8392b3e8a0",
+        "name": "business_unit_identifier_client",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/54c76802-e0da-4961-af59-0dace7464881",
+        "name": "warehouse_identifier",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/0fc16be0-b871-4ba7-a80c-fdfd30927120",
+        "name": "product_adeo_reference",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/f20b7590-e999-4e5b-905e-6f35aae802e1",
+        "name": "currency_code",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/46648933-7164-4165-96b2-ae7f9da26ab6",
+        "name": "partner_identifier",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/7aae2eb8-f9b1-4cb4-acc5-f19b05e2869b",
+        "name": "supplier_circuit",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/5acde985-dca9-49e0-a145-1e8ea48e1587",
+        "name": "port_of_loading",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/f725e583-d10c-497a-bd41-909163116119",
+        "name": "port_of_discharge",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/4b6011f5-e735-4ad2-833f-4d6cc1cc8d1e",
+        "name": "purchasing_incoterm_code",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/4b6011f5-e735-4ad2-833f-4d6cc1cc8d1e",
+        "name": "selling_incoterm_code",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/c00e9b64-f40f-4656-85f1-576b709a3a98",
+        "name": "development_mode",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/4d5d33ce-c973-494f-b5f2-97329f5fed37",
+        "name": "palletization_plan_in",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/4d5d33ce-c973-494f-b5f2-97329f5fed37",
+        "name": "palletization_plan_storage",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/4d5d33ce-c973-494f-b5f2-97329f5fed37",
+        "name": "palletization_plan_out",
+        "type": "STRING"
+      },
+      {
+        "name": "number_of_units",
+        "type": "INTEGER"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/5fb22ec3-e25f-4612-8c70-58f600d138f3",
+        "name": "palletization_plan_length",
+        "type": "FLOAT"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/5c1052a7-b7ae-414d-86bd-a0d583f766dc",
+        "name": "palletization_plan_width",
+        "type": "FLOAT"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/caa60dae-b83f-4d7c-9795-d6ff897045b7",
+        "name": "palletization_plan_height",
+        "type": "FLOAT"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/f33a05d3-47df-4fcf-804f-50b9a1677ad8",
+        "name": "palletization_plan_weight_gross",
+        "type": "FLOAT"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/21468bd9-1297-446e-9de8-3183cfd49875",
+        "name": "palletization_plan_type",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/14c40dab-c951-4b85-8ee5-07b758917ee5",
+        "name": "palletization_plan_number_of_layers",
+        "type": "INTEGER"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/53e2cb24-48ee-4fee-982b-dcee3b5d4986",
+        "name": "season_sales_type",
+        "type": "STRING"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/df95e2ce-abbe-4bdd-96ae-5921d63adae4",
+        "name": "season_start_date",
+        "type": "DATE"
+      },
+      {
+        "description": "https://adeo.collibra.com/asset/20480af0-02aa-4edf-b00c-fecd03e22a55",
+        "name": "season_end_date",
+        "type": "DATE"
+      },
+      {
+        "description": "link requests responses",
+        "name": "MESSAGE_ID",
+        "type": "STRING"
+      },
+      {
+        "name": "_timestamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "TEC_DAT_CRE",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "TEC_DAT_MAJ",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "TEC_UTI_MAJ",
+        "type": "STRING"
+      },
+      {
+        "mode": "REQUIRED",
+        "name": "TEC_VERSION",
+        "type": "STRING"
+      }
+    ],
+    "table_id": "CCR_COSTING_REQUESTS_002"
+  },
+  "id": "dfdp-ccr-team-pprod.ccr_kafka2bq_pipeline.CCR_COSTING_REQUESTS_002",
+  "metadata": {
+    "request_id": "fc672a37-84bb-4d00-8cce-ca5de25a95cb"
+  },
+  "type": "BIGQUERY_TABLE"
+}
